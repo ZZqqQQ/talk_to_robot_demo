@@ -1,0 +1,5 @@
+<launch>
+    <param name="aiml_file" value="chat.aiml" />
+    <param name="aiml_path" value="$(find talk_to_robot)/config" />
+    <node name="aiml_voice_server" pkg="talk_to_robot" type="aiml_voice_server.py" output="screen" />
+</launch>

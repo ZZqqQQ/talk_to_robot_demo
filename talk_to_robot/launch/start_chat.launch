@@ -1,0 +1,16 @@
+<launch>
+    <!--启动pocketsphinx功能包中的TTS节点-->
+    <include file="$(find talk_to_robot)/launch/chat_recognizer.launch" />
+
+    <!--加载aiml文件，并根据用户的输入进行相应的回答-->
+    <param name="aiml_file" value="chat.aiml" />
+    <param name="aiml_path" value="$(find talk_to_robot)/config" />
+    <node name="aiml_voice_server" pkg="talk_to_robot" type="aiml_voice_server.py" output="screen" />
+
+    <!--启动文本转语音节点-->
+    <include file="$(find sound_play)/soundplay_node.launch" />
+    <node name="aiml_tty" pkg="talk_to_robot" type="aiml_tty.py" output="screen" />
+
+    <node name="aiml_voice_recognizer" pkg="talk_to_robot" type="aiml_voice_recognizer.py" output="screen" />
+
+</launch>

@@ -1,0 +1,7 @@
+<launch>
+    <node name="recognizer" pkg="pocketsphinx" type="recognizer.py" output="screen">
+        <param name="lm" value="$(find talk_to_robot)/config/chat.lm" />
+        <param name="hmm" value="$(find talk_to_robot)/config/pocketphinx/hmm/en/hub4wsj_sc_8k" />
+        <param name="dict" value="$(find talk_to_robot)/config/chat.dic" />
+    </node>
+</launch>

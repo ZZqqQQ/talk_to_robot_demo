@@ -1,0 +1,34 @@
+<aiml version="1.0" encoding="UTF-8">
+    <category>
+        <pattern>HELLO</pattern>
+        <template>hi</template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE BEST SMARTPHONE</pattern>
+        <template>definately, it is iPhone</template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE WEATHER LIKE TODAY</pattern>
+        <template>It was showering today, the temperature was 24 to 28 degrees Celsius</template>
+    </category>
+    <category>
+        <pattern>FUCK TRUMP</pattern>
+        <template>He is an idiot guy</template>
+    </category>
+    <category>
+        <pattern>TURN ON THE MONITOR</pattern>
+        <template>done</template>
+    </category>
+    <category>
+        <pattern>TURN OFF THE BEDSIDE LAMP</pattern>
+        <template>done</template>
+    </category>
+    <category>
+        <pattern>NO ONE KNOWS BETTER THAN ME</pattern>
+        <template>trump is an idiot guy</template>
+    </category>
+    <category>
+        <pattern>FAIR WINDS AND FOLLOWING SEAS</pattern>
+        <template>you too</template>
+    </category>
+</aiml>
